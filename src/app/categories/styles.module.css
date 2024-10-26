@@ -4,4 +4,5 @@
   align-items: center;
   gap: 1rem;
   min-height: 60vh;
+  flex-direction: column;
 }

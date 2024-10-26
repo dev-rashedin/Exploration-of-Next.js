@@ -1,6 +1,6 @@
 import Button from "@/components/Button"
 import Image from "next/image";
-import profileImg from "@/public/profileImage.jpg"
+import profileImg from '@/public/profileImage.jpg'
 
 export default function MissionPage() {
   return (

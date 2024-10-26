@@ -19,7 +19,11 @@ import Link from "next/link"
 ];
   
 export const metadata = {
-  title: 'Blogs',
+  title: {
+    default: 'Next Dev Blogs',
+    template: '%s | Next Dev'
+  },
+  
   description: 'Blog page of Next Dev',
   keywords: ['Next.js', 'React', 'JavaScript'],
 };

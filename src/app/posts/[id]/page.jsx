@@ -8,10 +8,11 @@ import { Suspense } from "react";
 export async function generateMetadata({params}) {
    const { id } = await params;
   const post = await getSinglePost(id);
-  
+   
   return {
     title: post.title,
-    description: post.body
+    description: post.body,
+    keywords: post.body.split(" ")
  }
 }
 

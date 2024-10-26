@@ -1,5 +1,13 @@
 import { notFound } from "next/navigation";
 
+export const generateMetadata = async ({params}) => {
+  const { id } = await params;
+  return {
+    title:`Blog of ${id}`,
+    description: 'dynamic metadata'
+  }
+}
+
 export default async function singleBlogPage({ params }) {
   
   const { id } = await params;

@@ -18,7 +18,8 @@ export const middleware = async(request) => {
   const cookieStore = await cookies();
   
   const token = cookieStore.get('token');
-  console.log(token?.value)
+  
+  // console.log(token?.value)
   
 
   if (!user || !token) {

@@ -1,6 +1,7 @@
 import getAllPosts from "@/lib/getAllPosts"
 import Link from "next/link";
 import { Headland_One } from 'next/font/google'
+import { redirect } from "next/navigation";
 
 const headland = Headland_One({ weight: ['400'], subsets: ['latin'] });
 
@@ -17,6 +18,10 @@ async function PostPage() {
 
   const posts = await getAllPosts()
   // console.log(posts)
+
+  if (posts) {
+    redirect(`/posts/${posts[0].id}`);
+  }
   
 
   return (

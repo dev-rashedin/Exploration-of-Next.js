@@ -1,14 +1,16 @@
 import getAllPosts from "@/lib/getAllPosts";
 import Link from "next/link"
+import styles from './styles.module.css'
 
 async function categoriesPage() {
 
   const posts = await getAllPosts();
 
   return (
-    <div className="min-h-[60vh] flex justify-center items-center">
+    <div className={styles.mainStyle}>
       <h1 className="text-xl">All Categories</h1>
-       <ul className='mt-6 px-6'>
+      <h4>Hello there, it&apos;s global css  style</h4>
+       {/* <ul className='mt-6 px-6'>
         {posts.map((post, idx) => (
           <li key={post.id} className='mb-2 cursor-pointer pb-1'>
             <Link href={`/posts/${post.id}`}>
@@ -19,7 +21,7 @@ async function categoriesPage() {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   )
 }

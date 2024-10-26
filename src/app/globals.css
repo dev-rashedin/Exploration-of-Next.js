@@ -25,3 +25,8 @@ body {
     text-wrap: balance;
   }
 }
+
+h4{
+  color: tomato;
+  font-size: 1.4rem;
+}

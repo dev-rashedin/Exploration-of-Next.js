@@ -19,9 +19,9 @@ async function PostPage() {
   const posts = await getAllPosts()
   // console.log(posts)
 
-  if (posts) {
-    redirect(`/posts/${posts[0].id}`);
-  }
+  // if (posts) {
+  //   redirect(`/posts/${posts[0].id}`);
+  // }
   
 
   return (

@@ -18,6 +18,10 @@ const NavLinks =
       title: 'Posts',
     },
     {
+      path: '/categories',
+      title: 'Categories',
+    },
+    {
       path: '/dashboard',
       title: 'Dashboard',
     },

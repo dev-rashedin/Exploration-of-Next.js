@@ -16,7 +16,13 @@ import Link from "next/link"
       title: 'Blog 3',
       description: 'Blog 3 description',
     },
-  ];
+];
+  
+export const metadata = {
+  title: 'Blogs',
+  description: 'Blog page of Next Dev',
+  keywords: ['Next.js', 'React', 'JavaScript'],
+};
 
 export default function BlogPage() {
 

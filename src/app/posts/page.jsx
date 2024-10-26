@@ -1,6 +1,14 @@
 import getAllPosts from "@/lib/getAllPosts"
 import Link from "next/link";
 
+export const metadata = {
+  title: {
+    absolute: 'Posts'
+  },
+  description: "Posts page of Next Dev",
+  
+}
+
 
 async function PostPage() {
 

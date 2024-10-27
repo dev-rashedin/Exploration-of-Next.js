@@ -1,5 +1,3 @@
-import { redirect } from "next/navigation";
-
 export default async function getAllPosts() {
   const result = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/posts?_limit=10`,

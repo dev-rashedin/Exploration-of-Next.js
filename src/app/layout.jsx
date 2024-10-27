@@ -1,6 +1,7 @@
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import AuthProvider from '@/services/AuthProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,15 +28,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${inter.variable} ${roboto_mono.variable} `}>
-      <body
-        className='max-w-7xl mx-auto px-4 bg-blue-950'
-        suppressHydrationWarning
-      >
-        <Navbar />
+      <AuthProvider>
+        <body
+          className='max-w-7xl mx-auto px-4 bg-blue-950'
+          suppressHydrationWarning
+        >
+          <Navbar />
 
-        <div className={`min-h-screen pt-8 bg-blue-950 `}>{children}</div>
-        <footer className='h-20'></footer>
-      </body>
+          <div className={`min-h-screen pt-8 bg-blue-950 `}>{children}</div>
+          <footer className='h-20'></footer>
+        </body>
+      </AuthProvider>
     </html>
   );
 }

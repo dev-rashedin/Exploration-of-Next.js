@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import NavLinks from "./NavLinks";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 function Navbar() {
 
@@ -53,7 +53,7 @@ router.push('/api/auth/signin')
           <Link href='/api/auth/signin'>Login</Link>
         </button>
       ) : (
-        <button className='border px-4 py-1 rounded-lg border-yellow-600 text-green-600'>
+        <button onClick={() => signOut()} className='border px-4 py-1 rounded-lg border-yellow-600 text-green-600'>
           Logout
         </button>
       )}

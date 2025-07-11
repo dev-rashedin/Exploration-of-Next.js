@@ -1,5 +1,5 @@
 ## This is the public repository of My Exploration of Next.JS from basic to advanced concepts
 
-  - Next.JS Basic (Learn With Sumit) 
-  - Next.Js Crash Course
-  - 
+  - Next.js Basic (Learn With Sumit) 
+  - Next.js Crash Course (No Name)
+  - Next.js Crash Course (Pedro Tech)
